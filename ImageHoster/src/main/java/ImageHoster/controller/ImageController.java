@@ -186,7 +186,7 @@ public class ImageController {
         else {
             model.addAttribute("image", image);
             model.addAttribute("tags",image.getTags());
-            model.addAttribute("editError", error);
+            model.addAttribute("deleteError", error);
             return "images/image";
         }
     }
