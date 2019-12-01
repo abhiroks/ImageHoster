@@ -62,8 +62,8 @@ public class ImageController {
         Comment comment = new Comment();
         comment.setText(newComments);
         comment.setDate(new Date());
-        user.getComments().add(comment);
-        image.getComments().add(comment);
+        //user.getComments().add(comment);
+        //image.getComments().add(comment);
         comment.setUser(user);
         comment.setImage(image);
         imageService.createComment(comment);
